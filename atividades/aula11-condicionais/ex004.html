@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País teste</title>
+    <style>
+        p {
+            display: inline-block;
+            text-indent: 25px;
+        }
+
+        select {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p>Você nasceu no?</p> <select name="sel" id="sel">
+        <option value="BR">Brasil</option>
+        <option value="EUA">Estados Unidos</option>
+    </select>
+    <input type="button" value="Selecionar" onclick="selecionar()">
+    <div id="area"></div>
+
+    <script>
+        function selecionar() {
+            var pais = document.getElementById('sel')
+            var valpais = pais.value
+            var res = document.getElementById('area')
+
+            if (valpais == 'BR') {
+                res.innerHTML = 'Você é brasileiro'
+            } else {
+                res.innerHTML = 'Você é americano'
+            }
+        }
+    </script>
+
+</body>
+</html>

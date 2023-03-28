@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro script</title>
+    <style>
+        body, html {
+            background-color: rgb(20, 146, 243);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Me levrei da maldição!</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: ')) /* É possivel dizer que aquilo que está sendo guardado na variavel é um número ou uma string, para que o computador não se confunda, nesse caso aquilo que é escrito no .prompt é tratado como uma string, para dizer que é um número existem 3 formas:
+        parseInt() = diz que é um número inteiro 
+        parseFloat() = diz que é um número com ponto flutuante
+        Number() = diz que é um número, pode ser inteiro ou flutuante */
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${String(s)}`) // É possivel usar o template string, fazendo com que inves de usar o + de concatenação seja necessário só deixar a frase entre crase ` e quanto for uma variavel ou atributo da variavel, colocar ela entre chaves e com um sifrão na frente: ${}
+    </script>
+</body>
+</html>

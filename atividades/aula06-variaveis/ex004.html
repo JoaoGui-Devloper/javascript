@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n1 = 1500.50
+        document.writeln(n1.toFixed(2).replace('.' , ',')) /* O toFixed(2) cria casas decimais, quanto maior o número entre as aspas, mais casas decimais
+        O .replace troca o primeiro item entre aspas pelo segundo item entre aspas, ou seja, sempre onde fosse aparecer um . em n1 agora vai aparecer uma , */
+
+        document.writeln(n1.toLocaleString('pt-BR', {style: "currency", currency: 'BRL'})) /* O toLocaleString serve para que aquele valor seja entendido como um valor em real brasileiro*/
+    </script>
+</body>
+</html>
